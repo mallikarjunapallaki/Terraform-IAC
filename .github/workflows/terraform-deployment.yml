@@ -8,7 +8,9 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
-
+    defaults:
+      run:
+        working-directory: ./test-github-actions-iac
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
